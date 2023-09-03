@@ -2,23 +2,45 @@
 {
     internal class Program
     {
-        public double usingCertesianSystem()
+        public void usingCertesianSystem()
         {
-            Console.Write("Enter the value of X1: ");
+            Console.Write("Enter the value of x1: ");
             double x1=Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Enter the value of X2: ");
+            Console.Write("Enter the value of y1: ");
+            double y1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter the value of x2: ");
             double x2 = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Enter the value of Y1: ");
-            double Y1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter the value of y2: ");
+            double y2 = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Enter the value of Y2: ");
-            double Y2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter the value of a1: ");
+            double a1 = Convert.ToDouble(Console.ReadLine());
 
-            double Length_Of_Line = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Sqrt(Math.Pow(Y2 - Y1, 2)));
-            Console.WriteLine("Length Of Line: " + Length_Of_Line);
-            return Length_Of_Line;
+            Console.Write("Enter the value of b1: ");
+            double b1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter the value of a2: ");
+            double a2 = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Enter the value of b2: ");
+            double b2 = Convert.ToDouble(Console.ReadLine());
+
+            double Length_Of_Line_1 = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Sqrt(Math.Pow(y2-y1, 2)));
+
+            double Length_Of_Line_2 = Math.Sqrt(Math.Pow(a2 - a1, 2) + Math.Sqrt(Math.Pow(b2 - b1, 2)));
+
+            if (Length_Of_Line_1 == Length_Of_Line_2)
+            {
+                Console.WriteLine("Two Lines are equal");
+            }
+            else
+            {
+                Console.WriteLine("Two line are not equal");
+            }
+            
         }
         static void Main(string[] args)
         {
