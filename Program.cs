@@ -5,7 +5,7 @@
         public void usingCertesianSystem()
         {
             Console.Write("Enter the value of x1: ");
-            double x1=Convert.ToDouble(Console.ReadLine());
+            double x1 = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Enter the value of y1: ");
             double y1 = Convert.ToDouble(Console.ReadLine());
@@ -28,7 +28,7 @@
             Console.Write("Enter the value of b2: ");
             double b2 = Convert.ToDouble(Console.ReadLine());
 
-            double Length_Of_Line_1 = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Sqrt(Math.Pow(y2-y1, 2)));
+            double Length_Of_Line_1 = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Sqrt(Math.Pow(y2 - y1, 2)));
 
             double Length_Of_Line_2 = Math.Sqrt(Math.Pow(a2 - a1, 2) + Math.Sqrt(Math.Pow(b2 - b1, 2)));
 
@@ -36,11 +36,15 @@
             {
                 Console.WriteLine("Two Lines are equal");
             }
+            else if (Length_Of_Line_1 > Length_Of_Line_2)
+            {
+                Console.WriteLine("Line 1 is greater than line 2");
+            }
             else
             {
-                Console.WriteLine("Two line are not equal");
+                Console.WriteLine("Line 2 is greter than line 1");
             }
-            
+        
         }
         static void Main(string[] args)
         {
